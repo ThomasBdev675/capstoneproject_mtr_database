@@ -7,4 +7,4 @@ WORKDIR /sql
 FROM mcr.microsoft.com/mssql/server:2019-latest
 WORKDIR /sql
 
-CMD ["-p", "$PORT"]
+#CMD ["-p", "$PORT"]
