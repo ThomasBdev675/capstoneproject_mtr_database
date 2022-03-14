@@ -7,4 +7,6 @@ WORKDIR /sql
 FROM mcr.microsoft.com/mssql/server:2019-latest
 WORKDIR /sql
 
+CMD ["-b", "0.0.0.0:$PORT"]
+
 #CMD [-e "ACCEPT_EULA=Y", -e "SA_PASSWORD=$SA_PASSWORD", "-p $PORT", --name ${HEROKU_APP_NAME}.herokuapp.com, --hostname ${HEROKU_APP_NAME}.herokuapp.com ${HEROKU_APP_NAME}]
